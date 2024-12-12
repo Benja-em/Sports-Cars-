@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Tienda de Vehículos Deportivos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Menú de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sports Cars</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Filtros por país -->
+    <header class="bg-dark text-white text-center py-4 mt-header">
+        <h1>Catálogo de Vehículos</h1>
+        <div class="mt-3">
+            <a href="#usa" class="btn btn-outline-light mx-2">USA</a>
+            <a href="#italia" class="btn btn-outline-light mx-2">Italia</a>
+            <a href="#japon" class="btn btn-outline-light mx-2">Japón</a>
+            <a href="#alemania" class="btn btn-outline-light mx-2">Alemania</a>
+            <a href="#francia" class="btn btn-outline-light mx-2">Francia</a>
+        </div>
+    </header>
+    
+
+    <!-- Vehículos por país -->
+    <section class="container my-5">
+        <!-- USA -->
+        <h2 id="usa" class="mb-4">Vehículos de USA</h2>
+        <div class="row">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Mustang Boss 429.jpg" class="card-img-top" alt="Auto USA 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Mustang Boss 429</h5>
+                        <p class="card-text">Desde $152,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ford GT40.jpg" class="card-img-top" alt="Auto USA 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Ford GT40</h5>
+                        <p class="card-text">Desde $163,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Mustang Shelby GT500.jpg" class="card-img-top" alt="Auto USA 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Mustang Shelby GT500</h5>
+                        <p class="card-text">Desde $2,574,500</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Camaro SS 1969.jpg" class="card-img-top" alt="Auto USA 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Camaro SS 1969</h5>
+                        <p class="card-text">Desde $67,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 5-->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Chevrolet Corvette .jpg" class="card-img-top" alt="Auto USA 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Chevrolet Corvette</h5>
+                        <p class="card-text">Desde $70,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 6-->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Camaro ZL1.jpg" class="card-img-top" alt="Auto USA 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Camaro ZL1</h5>
+                        <p class="card-text">Desde $65,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Italia -->
+        <h2 id="italia" class="mb-4">Vehículos de Italia</h2>
+        <div class="row">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ferrari 812 Superfast.jpg" class="card-img-top" alt="Auto Italia 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Ferrari 812 Superfast</h5>
+                        <p class="card-text">Desde $400,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ferrari F80.jpg" class="card-img-top" alt="Auto Italia 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Ferrari F80</h5>
+                        <p class="card-text">Desde $3,700,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Ferrari Roma.jpg" class="card-img-top" alt="Auto Italia 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Ferrari Roma</h5>
+                        <p class="card-text">Desde $300,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Lamborghini Huracán.jpg" class="card-img-top" alt="Auto Italia 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Lamborghini Huracán</h5>
+                        <p class="card-text">Desde $230,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Lamborghini Aventador LP 780-4 Ultimae.jpg" class="card-img-top" alt="Auto Italia 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Lamborghini Aventador LP 780-4 Ultimae</h5>
+                        <p class="card-text">Desde $1,600,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Lamborghini Urus.jpg" class="card-img-top" alt="Auto Italia 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Lamborghini Urus</h5>
+                        <p class="card-text">Desde $241,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/GranTurismo.jpg" class="card-img-top" alt="Auto Italia 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo GranTurismo</h5>
+                        <p class="card-text">Desde $211,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/MC20.jpg" class="card-img-top" alt="Auto Italia 8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo MC20</h5>
+                        <p class="card-text">Desde $340,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/GT2 Stradale.jpg" class="card-img-top" alt="Auto Italia 9">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo GT2 Stradale</h5>
+                        <p class="card-text">Desde $498,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Japón -->
+        <h2 id="japon" class="mb-4">Vehículos de Japón</h2>
+        <div class="row">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Nissan GT-R.jpg" class="card-img-top" alt="Auto Japón 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Nissan GT-R</h5>
+                        <p class="card-text">Desde $121,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 2 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Nissan Z.jpg" class="card-img-top" alt="Auto Japón 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Nissan Z</h5>
+                        <p class="card-text">Desde $1,377,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Nissan Skyline.jpg" class="card-img-top" alt="Auto Japón 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Nissan Skyline</h5>
+                        <p class="card-text">Desde $41,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 4 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Civic Type R.jpg" class="card-img-top" alt="Auto Japón 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Civic Type R</h5>
+                        <p class="card-text">Desde $46,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Honda Accord Sport.jpg" class="card-img-top" alt="Auto Japón 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Honda Accord Sport</h5>
+                        <p class="card-text">Desde $765,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 6 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Honda NSX.jpg" class="card-img-top" alt="Auto Japón 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Honda NSX</h5>
+                        <p class="card-text">Desde $180,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Toyota GR86.jpg" class="card-img-top" alt="Auto Japón 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Toyota GR86</h5>
+                        <p class="card-text">Desde $40,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 8 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/GR Yaris.jpg" class="card-img-top" alt="Auto Japón 8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Toyota GR Yaris</h5>
+                        <p class="card-text">Desde $54,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 9 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/GR SUPRA.jpg" class="card-img-top" alt="Auto Japón 9 ">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Toyota GR SUPRA</h5>
+                        <p class="card-text">Desde $84,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Alemania -->
+        <h2 id="alemania" class="mb-4">Vehículos de Alemania</h2>
+        <div class="row">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/BMW M2.jpg" class="card-img-top" alt="Auto Aleman 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo BMW M2</h5>
+                        <p class="card-text">Desde $100,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 2 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/BMW M3.jpg" class="card-img-top" alt="Auto Aleman 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo BMW M3</h5>
+                        <p class="card-text">Desde $136,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/BMW M4.jpg" class="card-img-top" alt="Auto Aleman 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo BMW M4</h5>
+                        <p class="card-text">Desde $202,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 4 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/911 GT3 RS.jpg" class="card-img-top" alt="Auto Aleman 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo 911 GT3 RS</h5>
+                        <p class="card-text">Desde $404,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/911 Carrera GTS.jpg" class="card-img-top" alt="Auto Aleman 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo 911 Carrera GTS</h5>
+                        <p class="card-text">Desde $187,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 6 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/718 Cayman GT4 RS.jpg" class="card-img-top" alt="Auto Aleman 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo 718 Cayman GT4 RS</h5>
+                        <p class="card-text">Desde $188,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/RS 7 Sportback.jpg" class="card-img-top" alt="Auto Aleman 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo RS 7 Sportback</h5>
+                        <p class="card-text">Desde $188,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/RS 6 Avant.jpg" class="card-img-top" alt="Auto Aleman 8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo RS 6 Avant</h5>
+                        <p class="card-text">Desde $162,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 9 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/rs 5 coupe.jpg" class="card-img-top" alt="Auto Aleman 9">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo RS 5 Coupe</h5>
+                        <p class="card-text">Desde $121,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Francia -->
+        <h2 id="francia" class="mb-4">Vehículos de Francia</h2>
+        <div class="row">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Bugatti Chiron Super Sport 300+4.jpg" class="card-img-top" alt="Auto Francia 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bugatti Chiron Super Sport 300+</h5>
+                        <p class="card-text">Desde $3,665,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 2 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Bugatti Veyron Super Sport.jpg" class="card-img-top" alt="Auto Francia 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Bugatti Veyron Super Sport</h5>
+                        <p class="card-text">Desde $1,256,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Bugatti La Voiture Noire.jpg" class="card-img-top" alt="Auto Francia 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Bugatti La Voiture Noire</h5>
+                        <p class="card-text">Desde $18,000,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 4 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Bugatti Centodieci.jpg" class="card-img-top" alt="Auto Francia 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Bugatti Centodieci</h5>
+                        <p class="card-text">Desde $8,378,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Bugatti Tourbillon.jpg" class="card-img-top" alt="Auto Francia 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Bugatti Tourbillon</h5>
+                        <p class="card-text">Desde $4,000,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <!-- Ejemplo 6 -->
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Bugatti bolide.jpg" class="card-img-top" alt="Auto Francia 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modelo Bugatti Bolide</h5>
+                        <p class="card-text">Desde $4,000,000</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#descripcionModal" onclick="cargarDescripcion('Este es un modelo de vehículo deportivo con alto rendimiento.')">
+                            Ver descripción
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 SportsCars. Todos los derechos reservados.</p>
+    </footer>
+
+   <!-- Modal de descripción -->
+<div class="modal fade" id="descripcionModal" tabindex="-1" aria-labelledby="descripcionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel">Descripción del vehículo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="descripcionTexto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Botón flotante -->
+<button id="btnTop" class="btn btn-primary btn-lg">
+    ↑ Volver al inicio
+</button>
+
+<!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsCars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sports Cars</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header con imagen de fondo -->
+    <header id="inicio" class="header-bg text-white text-center py-5">
+        <div class="header-content">
+            <h1 class="display-4 font-weight-bold">Sports Cars</h1>
+            <p class="lead">Velocidad, lujo y perfección en un solo lugar</p>
+        </div>
+    </header>
+
+    <!-- Introducción -->
+    <section id="intro" class="container text-center my-5">
+        <h2>¿Por qué elegir un auto deportivo?</h2>
+        <p class="mt-3">
+            Elegir un auto deportivo es optar por la combinación perfecta entre rendimiento, diseño, y emociones al volante. 
+            Son más que vehículos: son un estilo de vida, un símbolo de pasión y una experiencia incomparable en cada kilómetro.
+        </p>
+        <a href="catalogo.html" class="btn btn-primary mt-4">Explorar Catálogo</a>
+    </section>
+
+    <!-- Muestra de vehículos deportivos -->
+    <section id="vehiculos" class="container my-5">
+        <h2 class="text-center mb-4">Modelos Destacados</h2>
+        <div class="row">
+            <!-- Vehículo 1: Porsche 911 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/porsche911.jpg" class="card-img-top" alt="Porsche 911">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Porsche 911</h5>
+                        <p class="card-text">
+                            El Porsche 911 es el referente de los coches deportivos. Prácticamente perfecto, 
+                            combina confort y prestaciones excepcionales. El Turbo S alcanza los 330 km/h y 
+                            acelera a 100 km/h en 2,7 segundos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 2: Maserati MC20 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/maserati_mc20.jpg" class="card-img-top" alt="Maserati MC20">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Maserati MC20</h5>
+                        <p class="card-text">
+                            El MC20 es un superdeportivo equilibrado con un chasis de carbono ligero y un motor V6 de 630 CV, 
+                            diseñado para ofrecer confianza y satisfacción en cualquier carretera.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 3: Porsche 718 Cayman/Boxster -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/porsche718.jpg" class="card-img-top" alt="Porsche 718 Cayman">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Porsche 718 Cayman/Boxster</h5>
+                        <p class="card-text">
+                            Deportivo ágil y equilibrado, perfecto para el día a día o para la competición. 
+                            Su reparto de pesos y ligereza lo hacen especialmente divertido en zonas viradas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 4: Audi R8 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/audi_r8.jpg" class="card-img-top" alt="Audi R8">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Audi R8</h5>
+                        <p class="card-text">
+                            Un superdeportivo con motor V10 y diseño refinado que comparte tecnología con el Lamborghini Huracán. 
+                            Perfecto para quien busca potencia y exclusividad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 5: BMW M2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/bmw_m2.jpg" class="card-img-top" alt="BMW M2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">BMW M2</h5>
+                        <p class="card-text">
+                            Con motor de 460 CV y tracción trasera, el M2 combina potencia, equilibrio y diversión. 
+                            Ideal para maniáticos de la conducción que buscan un coche único.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 6: Toyota GR Yaris -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/toyota_gr_yaris.jpg" class="card-img-top" alt="Toyota GR Yaris">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Toyota GR Yaris</h5>
+                        <p class="card-text">
+                            Este "cohete de bolsillo" es súper efectivo y divertido. 
+                            Perfecto para carretera de montaña o circuito, y sorprendentemente práctico para el día a día.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 7: Alpine A110 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/alpine_a110.jpg" class="card-img-top" alt="Alpine A110">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Alpine A110</h5>
+                        <p class="card-text">
+                            Este es el único deportivo que puede considerarse ultraligero.
+                            Su reducido tamaño es también clave para obtener una diversión única en rutas de montaña, pero también en el día a día.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 8: BMW M4 Competition -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/bmw_m4_com.jpg" class="card-img-top" alt="BMW M4 Competition">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">BMW M4 Competition</h5>
+                        <p class="card-text">
+                            Es un coche que reúne la comodidad de tener las dimensiones de un turismo con unas suspensiones deportivas pero refinadas, ofreciendo un punto más de deportividad, dinamismo y diversión al volante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehículo 9: Toyota GR Supra -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/toyota_gr_supra.jpg" class="card-img-top" alt="Toyota GR Supra">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Toyota GR Supra</h5>
+                        <p class="card-text">
+                            El tacto de conducción y su rendimiento son sobresalientes, pero está más enfocado a ser un gran GT.
+                            Esto quere decir que es perfecto para recorrer largas distancias muy rápido, sin generarle fatiga a sus pasajeros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <h5>Contáctanos</h5>
+        <p>Instagram, Facebook, WhatsApp: +591 69964224 | Gmail: <a href="mailto:SportsCars@gmail.com" class="text-white">SportsCars@gmail.com</a></p>
+        <p>© 2024 Sports Cars. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
